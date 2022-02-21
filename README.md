@@ -64,7 +64,7 @@ curl -d '{"username": "addi","password": "123456"}' -H "Content-Type: applicatio
 }</pre>
 #### 3.2 DB data record result:
 <pre>
-{"name": "Aliado ADDI", "tags": ["tecnologia", "informacion", "finanzas"], "brand": "Merchant", "discount": 5, "maxAmount": 150, "minAMount": 20, "credentials": "pbkdf2:sha256:260000$KxSjQ7P3zqwuNkhk$7e907dca5ffa52c1f5f7c76d699cc5aff4c00f0cdedcd23855d3096d6a1cefdd"}
+{"name": "Aliado ADDI", "tags": ["tecnologia", "informacion", "finanzas"], "brand": "Merchant", "discount": 5, "maxAmount": 150, "minAMount": 20, "credentials": "pbkdf2:sha256:260000$3kxJR7j82t6aRbFl$62537ed72dd26d23f0e3ee78f0d544fd15ffb03b1834b34e7bbd17b25bce0bf9"}
 </pre>
 #### 3.3 HTTP request that checks ally's credentials through our API
 ```
@@ -75,3 +75,13 @@ curl http://127.0.0.1:5000/allies/1234567890/credentials
 {
   &quot;message&quot;: &quot;Ally has credentials set!&quot;
 }</pre>
+---
+## "Visual" Deliverables
+### 1. SQL script to add a new ally.
+![image](https://user-images.githubusercontent.com/19656278/154877423-66c5b6e3-f6d2-4d5d-8e3a-693bdc70a017.png)
+### 2. SQL query to list all allies with the tag "finance" ("finanzas")
+![image](https://user-images.githubusercontent.com/19656278/154877513-7f21c448-7b3c-4d7a-bde3-12e56c27fe95.png)
+### 3. HTTP Request that adds a given ally's credentials through our API
+![image](https://user-images.githubusercontent.com/19656278/154878213-b7608618-6d58-4376-83c7-529546228bb7.png)
+#### 3.2 Ally's generted credential through API
+![image](https://user-images.githubusercontent.com/19656278/154877936-ea8bf288-de23-4239-b2d3-08b49441dccd.png)
